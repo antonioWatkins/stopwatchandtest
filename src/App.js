@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import StopWatch from './Components/StopWatch/StopWatch';
+import {useState,useEffect} from 'react'
+import Timer from './Components/Timer/Timer';
+//import {app} from "../../api/routes/app"
+
+
+// const  apiurl = 'http://localhost:3003'
+// async function getStopwatch(){
+//   const response =await fetch(`${apiUrl}/`);
+//   const json =await response.json();
+
+//   return json.map(stopwatch => ({
+//     ...Timer
+
+//   })
+// }
 
 function App() {
+
+   
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+    <StopWatch />
     </div>
   );
 }
